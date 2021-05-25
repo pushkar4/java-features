@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/java7/binary-literals/binary-literals.iml" filepath="$PROJECT_DIR$/java7/binary-literals/binary-literals.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-features.iml" filepath="$PROJECT_DIR$/java-features.iml" />
       <module fileurl="file://$PROJECT_DIR$/java7/try-with-resources/try-with-resources.iml" filepath="$PROJECT_DIR$/java7/try-with-resources/try-with-resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java7/underscores-in-numerals/underscores-in-numerals.iml" filepath="$PROJECT_DIR$/java7/underscores-in-numerals/underscores-in-numerals.iml" />
     </modules>
   </component>
 </project>
