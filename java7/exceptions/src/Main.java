@@ -1,6 +1,11 @@
 public class Main {
 
   public static void main(String[] args) {
+    suppressedExceptionsDemo();
+    catchMultipleExceptionsDemo();
+  }
+
+  private static void suppressedExceptionsDemo() {
     try {
       accessDirtyResource();
     } catch (Exception e) {
@@ -19,6 +24,16 @@ public class Main {
   private static void accessDirtyResource() throws Exception {
     try (DirtyResource dirtyResource = new DirtyResource()) {
       dirtyResource.readDirtyResource();
+    }
+  }
+
+  private static void catchMultipleExceptionsDemo() {
+    int[] array = {1, 2, 3};
+    try {
+      System.out.println(array[10]);
+    } catch (NullPointerException | ArrayIndexOutOfBoundsException e) {
+      // No need of multiple catch statements
+      System.out.println(e.getMessage());
     }
   }
 }
