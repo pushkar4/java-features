@@ -11,9 +11,9 @@ public class Main {
 
   private static void tryBufferedReader() throws IOException {
     try (BufferedReader br =
-                 new BufferedReader(
-                         new FileReader(
-                                 System.getProperty("user.dir") + "/java7/try-with-resources/src/notes.txt"));) {
+        new BufferedReader(
+            new FileReader(
+                System.getProperty("user.dir") + "/java7/try-with-resources/src/notes.txt")); ) {
       String line;
       while ((line = br.readLine()) != null) {
         System.out.println(line);
@@ -22,7 +22,7 @@ public class Main {
   }
 
   private static void tryCustomResource() throws Exception {
-    try (CustomResource resource = new CustomResource();) {
+    try (CustomResource resource = new CustomResource(); ) {
       resource.readCustomResource();
     } // No need to do a resource.close() here since it will be called automatically
   }
