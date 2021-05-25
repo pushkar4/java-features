@@ -4,10 +4,10 @@ public class Main {
 
   public static void main(String[] args) throws Exception {
 
-    WatchService watchService = FileSystems.getDefault().newWatchService();
-
     String directory = System.getProperty("user.dir") + "/java7/watch-service/src/";
     System.out.println("Browse to " + directory + " and try creating/modifying/deleting files...");
+
+    WatchService watchService = FileSystems.getDefault().newWatchService();
 
     Path watchPath = Paths.get(directory);
 
